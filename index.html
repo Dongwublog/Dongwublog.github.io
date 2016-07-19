@@ -17,13 +17,13 @@ layout: default
                     <div class="label-card">
                         <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
                     </div>
-                    <div class="label-card">
+                    <!--<div class="label-card">
                         {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
                         {% endif %}
                     </div>
                     <div class="label-card">
                         {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
-                    </div>
+                    </div>-->
 
                     <div class="label-card">
                     {% include category.html %}
@@ -37,7 +37,7 @@ layout: default
                     {{post.excerpt}}
                 </div>
                 <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>阅读全文</a>
                 </div>
                 <hr>
               </li>
@@ -84,7 +84,7 @@ layout: default
             <div class="side ">
                 <div>
                     <i class="fa fa-th-list"></i>
-                    Categories
+                    分类
                 </div>
                 <ul class="content-ul" cate>
                     {% for category in site.categories order:ascending %}
@@ -103,7 +103,7 @@ layout: default
             <div class="side">
                 <div>
                     <i class="fa fa-tags"></i>
-                    Tags
+                    标签
                 </div>
                 <div class="tags-cloud">
                     {% assign first = site.tags.first %}

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: 关于我
 permalink: /about/
 icon: heart
 ---
 
-* content
+* 目录
 {:toc}
 
 ## 关于我
