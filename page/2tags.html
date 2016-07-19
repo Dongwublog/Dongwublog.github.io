@@ -18,8 +18,8 @@ icon: tags
 
         <ul>
         {% for tag in sortedtags %}
-          <!--<h2 id="{{ tag }}">{{ tag }}</h2>
-          <!--{% for post in site.tags[tag] %}-->
+          <h2 id="{{ tag }}">{{ tag }}</h2>
+          {% for post in site.tags[tag] %}
             <li>
                 <time>
                 {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
