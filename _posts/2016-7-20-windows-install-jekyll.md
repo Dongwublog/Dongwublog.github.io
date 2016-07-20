@@ -135,99 +135,82 @@ DevKit 是一个在 Windows 上帮助简化安装及使用 Ruby C/C++ 扩展如 
    `jekyll serve`  
 
 ## 9.故障诊断
-错误信息：
+1. **错误信息：**  
+ `“python” is not recognized as an internal or external command, operable program or batch file.`  
+  其他情况： 这里的 “python” 也可能是 “ruby”， “gem” 或是 “easy_install” 等。  
+  可能原因： 该程序可能未被正确地安装或未在 PATH 里设置成功。  
+  尝试解法： 确保程序已被正确安装。然后手动将其添加至 PATH，请参考如下步骤。
+   1. 按住 Win 键再按下 Pause
+   2. 点击 Advanced System Settings
+   3. 点击 Environment Variables
+   4. 将 `;C:\python27` 添加至 Path 变量的末尾
+   5. 重启命令行
+2. **错误信息：**  
+ `ERROR:  Error installing jekyll:`  
+ `ERROR: Failed to build gem native extension.`  
+ `"C:/Program Files/Ruby/Ruby200-x64/bin/ruby.exe" extconf.rb`  
+ `creating Makefile`  
+ `make generating stemmer-x64-mingw32.def`  
+ `compiling porter.c`  
+ `...`  
+ `make install`  
+ `/usr/bin/install -c -m 0755 stemmer.so C:/Program Files/Ruby/Ruby200-x64/lib/`  
+ `ruby/gems/2.0.0/gems/fast-stemmer-1.0.2/li`  
+ `/usr/bin/install: target Files/Ruby/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fast-`  
+`stemmer-1.0.2/lib' is not a directory`  
+ `make: *** [install-so] Error 1`  
+ 可能原因：  
+ Ruby 被安装在含有空格的路径里。  
+ 尝试解法：  
+ 重新安装 Ruby，这次请不要使用带有空格的路径，或者请直接选择使用默认路径。  
+3. **错误信息：**  
+ `Generating... Liquid Exception: No such file or directory - python c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/pygments.rb-0.4.2/lib/pygments/mentos.py in 2013-04-22-yizeng-hello-world.md`  
+ 可能原因：   
+ Pygments 未能被正确安装或是 PATH 设置尚未生效。  
+ 尝试解法：   
+ 首先请确保 Pygments 已成功安装且 Python 的 PATH 设置正确未包含空格和最后多余的斜杠。 然后重启命令行。如果依旧失败，请尝试注销并重新登录 Windows。 甚至使用终极解法，重启电脑。  
 
-“python” is not recognized as an internal or external command, operable program or batch file.
-其他情况： 这里的 “python” 也可能是 “ruby”， “gem” 或是 “easy_install” 等。
-
-可能原因： 该程序可能未被正确地安装或未在 PATH 里设置成功。
-
-尝试解法： 确保程序已被正确安装。然后手动将其添加至 PATH，请参考如下步骤[1]。
-
-按住 Win 键再按下 Pause
-点击 Advanced System Settings
-点击 Environment Variables
-将 ;C:\python27 添加至 Path 变量的末尾
-重启命令行
-错误信息：
-
-ERROR:  Error installing jekyll:
-ERROR: Failed to build gem native extension.
-
-"C:/Program Files/Ruby/Ruby200-x64/bin/ruby.exe" extconf.rb
-
-creating Makefile
-make generating stemmer-x64-mingw32.def
-compiling porter.c
-...
-make install
-/usr/bin/install -c -m 0755 stemmer.so C:/Program Files/Ruby/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fast-stemmer-1.0.2/li
-/usr/bin/install: target `Files/Ruby/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fast-stemmer-1.0.2/lib' is not a directory
-make: *** [install-so] Error 1
-可能原因： Ruby 被安装在含有空格的路径里。
-
-尝试解法： 重新安装 Ruby，这次请不要使用带有空格的路径，或者请直接选择使用默认路径。
-
-错误信息：
-
-Generating... Liquid Exception: No such file or directory - python c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/pygments.rb-0.4.2/lib/pygments/mentos.py in 2013-04-22-yizeng-hello-world.md
-可能原因： Pygments 未能被正确安装或是 PATH 设置尚未生效。
-
-尝试解法： 首先请确保 Pygments 已成功安装且 Python 的 PATH 设置正确未包含空格和最后多余的斜杠。 然后重启命令行。如果依旧失败，请尝试注销并重新登录 Windows。 甚至使用终极解法，重启电脑。
-
-错误信息：
-
-Generating... Liquid Exception: No such file or directory - /bin/sh in _posts/2013-04-22-yizeng-hello-world.md
-可能原因： 与 pygments.rb 0.5.1/0.5.2 版本的兼容性问题。
-
-尝试解法： 将 pygments.rb gem 的版本从 0.5.1/0.5.2 降至 0.5.0。
-
-gem uninstall pygments.rb –version ‘=0.5.2’
-gem install pygments.rb –version 0.5.0
-
-错误信息：
-
-c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/dependency.rb:296:in `to_specs': Could not find 'pygments.rb' (~> 0.4.2) - did find: [pygments.rb-0.5.0] (Gem::LoadError)
-from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1196:in `block in activate_dependencies'
-from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1185:in `each'
-from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1185:in `activate_dependencies'
-from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1167:in `activate'
-from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/core_ext/kernel_gem.rb:48:in`gem'
-from c:/Ruby200-x64/bin/jekyll:22:in `<main>'`
-可能原因：如错误信息所述，找不到 pygments.rb 0.4.2，仅找到 pygments.rb 0.5.0。 （此问题出现于此文初稿时的 Jekyll 版本，现版本应已修复）
-
-尝试解法： 将 pygments.rb gem 的版本降级至 0.4.2
-
-gem uninstall pygments.rb –version “=0.5.0”
-gem install pygments.rb –version “=0.4.2”
-
-错误信息：
-
-Generating... You are missing a library required for Markdown. Please run:
-$ [sudo] gem install rdiscount
-Conversion error: There was an error converting '_posts/2013-04-22-yizeng-hello-world.md/#excerpt'.
-
-ERROR: YOUR SITE COULD NOT BE BUILT:
-   ------------------------------------
-   Missing dependency: rdiscount
-可能原因： 依赖包 rdiscount 未找到。 此问题最有可能的原因是，网站使用的是 rdiscount 作为 Markdown 引擎，而不是 Jekyll 默认的引擎，故需要手动自行安装。
-
-尝试解法：
-
-gem install rdiscount
-
-错误信息：
-
-c:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- wdm (LoadError)
-from c:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
-from c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.3.1/lib/listen/adapter.rb:207:in `load_dependent_adapter'
-from c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.3.1/lib/listen/adapters/windows.rb:33:in `load_dependent_a
-dapter'
-...
-可能原因： wdm gem 未被安装。因为 Jekyll 只官方地支持 *nix 系统，所以 Windows Directory Monitor 并没有作为依赖包而被自动安装。
-
-尝试解法：
-
-gem install wdm
-
-8.为了能够让这里网站正常运行，这里需要删除_post文件夹里的文件（应该有一个xxxx-xx-xx-welcome-to- jekyll.markdown字样的文件），因为这个文件内部使用了语法高亮插件（另外不删，则可以修改配置文件禁用该语法高亮插件，即修改根目录下 _config.yml中的pygments: true为false便可。），这个需要另外安装，不再本文范围内，不删会导致生成的静态页面有问题，因时间有限本文暂不提此问题。
+4. **错误信息：**  
+ `Generating... Liquid Exception: No such file or directory - /bin/sh in _posts/2013-04-22-yizeng-hello-world.md`  
+ 可能原因：   
+ 与 pygments.rb 0.5.1/0.5.2 版本的兼容性问题。  
+ 尝试解法：   
+ 将 pygments.rb gem 的版本从 0.5.1/0.5.2 降至 0.5.0。  
+ `gem uninstall pygments.rb –version ‘=0.5.2’`  
+ `gem install pygments.rb –version 0.5.0`  
+5. **错误信息：**  
+ `c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/dependency.rb:296:in to_specs': Could not find 'pygments.rb' (~> 0.4.2) - did find: [pygments.rb-0.5.0] (Gem::LoadError)`  
+ `from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1196:in block in activate_dependencies'`  
+ `from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1185:in each'`  
+ `from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1185:in activate_dependencies'`  
+ `from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/specification.rb:1167:in activate'`  
+ `from c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/core_ext/kernel_gem.rb:48:in gem'`  
+ `from c:/Ruby200-x64/bin/jekyll:22:in <main>'`  
+ 可能原因：  
+ 如错误信息所述，找不到 pygments.rb 0.4.2，仅找到 pygments.rb 0.5.0。 （此问题出现于此文初稿时的 Jekyll 版本，现版本应已修复）  
+ 尝试解法：   
+ 将 pygments.rb gem 的版本降级至 0.4.2  
+ `gem uninstall pygments.rb –version “=0.5.0”`  
+ `gem install pygments.rb –version “=0.4.2”`  
+6. **错误信息：**  
+ `Generating... You are missing a library required for Markdown. Please run:`  
+ `$ [sudo] gem install rdiscount`  
+ `Conversion error: There was an error converting '_posts/2013-04-22-yizeng-hello-world.md/#excerpt'.`  
+ `ERROR: YOUR SITE COULD NOT BE BUILT:`  
+ `Missing dependency: rdiscount`  
+ 可能原因：   
+ 依赖包 rdiscount 未找到。 此问题最有可能的原因是，网站使用的是 rdiscount 作为 Markdown 引擎，而不是 Jekyll 默认的引擎，故需要手动自行安装。  
+ 尝试解法：  
+ `gem install rdiscount`  
+7. **错误信息：**  
+ `c:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in require': cannot load such file -- wdm (LoadError)`  
+ `from c:/Ruby200-x64/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in require'`  
+ `from c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.3.1/lib/listen/adapter.rb:207:in load_dependent_adapter'`  
+ `from c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.3.1/lib/listen/adapters/windows.rb:33:in load_dependent_a`  
+ `dapter'`  
+ `...`  
+ 可能原因：   
+ wdm gem 未被安装。因为 Jekyll 只官方地支持 *nix 系统，所以 Windows Directory   Monitor 并没有作为依赖包而被自动安装。  
+ 尝试解法：  
+ `gem install wdm`  
+8. 为了能够让这里网站正常运行，这里需要删除_post文件夹里的文件（应该有一个xxxx-xx-xx-welcome-to- jekyll.markdown字样的文件），因为这个文件内部使用了语法高亮插件（另外不删，则可以修改配置文件禁用该语法高亮插件，即修改根目录下 _config.yml中的pygments: true为false便可。），这个需要另外安装，不再本文范围内，不删会导致生成的静态页面有问题，因时间有限本文暂不提此问题。
