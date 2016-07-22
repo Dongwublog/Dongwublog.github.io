@@ -8,7 +8,7 @@
 # Site settings
 port: 4001
 title: ZJW
-brief-intro: Java Dev Engineer
+brief-intro: JavaEE Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zjw1993.github.io" # the base hostname & protocol for your site
 

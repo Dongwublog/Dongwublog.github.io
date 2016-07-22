@@ -11,7 +11,7 @@ tags: Jekyll
 
 >目前，网上有许多Jekyll的安装方法，大都相似。本文比较完整，本人即按照此文安装成功，故转载记录。  
 >转载自： [Windows 上安装 Jekyll](http://blog.csdn.net/kong5090041/article/details/38408211)  
->原文地址: [Setup Jekyll on Windows](http://yizeng.me/2013/05/10/setup-jekyll-on-windows/)  
+>原文地址: <a target="_blank" href="http://yizeng.me/2013/05/10/setup-jekyll-on-windows/">Setup Jekyll on Windows</a>  
 
 
 
