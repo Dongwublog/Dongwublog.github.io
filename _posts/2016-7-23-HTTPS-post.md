@@ -17,7 +17,8 @@ tags: HTTPS
 　　首先，项目背景是ssm框架的，使用maven管理，出于方便使用apache的HttpClient来实现本功能。
 
 ### 添加依赖
-　　打开项目pom文件，在<dependencies>节点中增加如下配置：   
+　　打开项目pom文件，在<dependencies>节点中增加如下配置:   
+　　
     &lt;dependency&gt;  
     	&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;  
     	&lt;artifactId&gt;httpclient&lt;/artifactId&gt;  
