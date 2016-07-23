@@ -18,11 +18,11 @@ tags: HTTPS
 
 ### 添加依赖
 　　打开项目pom文件，在<dependencies>节点中增加如下配置：   
-　　`<dependency>`   
-　　　`<groupId>org.apache.httpcomponents</groupId>`   
-　　　`<artifactId>httpclient</artifactId>`  
-　　　`<version>4.0</version>`  
-　　`</dependency>`  
+    <dependency>
+    	<groupId>org.apache.httpcomponents</groupId>
+    	<artifactId>httpclient</artifactId>
+    	<version>4.0</version>
+    </dependency>
 
 ### 重写证书验证方法
     private static HttpClient wrapClient(HttpClient httpClient) {
