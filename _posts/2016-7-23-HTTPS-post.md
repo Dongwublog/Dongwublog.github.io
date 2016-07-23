@@ -18,9 +18,9 @@ tags: HTTPS
 
 ### 添加依赖
 　　打开项目pom文件，在<dependencies>节点中增加如下配置：   
-    &lt;dependency&gt;
-    	&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
-    	&lt;artifactId&gt;httpclient&lt;/artifactId&gt;
+    `&lt;dependency&gt;`
+    	`&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;`
+    	`&lt;artifactId&gt;httpclient&lt;/artifactId&gt;`
     	&lt;version&gt;4.0&lt;/version&gt;
     &lt;/dependency&gt;
 
