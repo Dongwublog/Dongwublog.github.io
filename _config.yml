@@ -7,8 +7,8 @@
 
 # Site settings
 port: 4001
-title: ZJW
-brief-intro: JavaEE Engineer
+title: 东吴科技
+brief-intro: 一只专业的互联网团队
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zjw1993.github.io" # the base hostname & protocol for your site
 
@@ -17,20 +17,20 @@ permalink: /:year/:month/:day/:title/
 # other links
 #twitter_username: gaohaoyang126
 facebook_username: 1070394375@qq.com
-github_username: zjw1993
-email: 1070394375@qq.com
-weibo_username: 用呵呵诠释一切
-zhihu_username: 章章
+github_username: Dongwublog
+email: blog@dongwu-inc.com
+#weibo_username: 用呵呵诠释一切
+#zhihu_username: 章章
 linkedIn_username: 
-dribbble_username: 
+#dribbble_username: 
 
-description_footer: 本站记录我Java之旅的沿途风景！
+description_footer: 我们是一个年轻的公司，但我们都有着丰富的经验，我们喜欢网络，我们也尊重传统，帮助别人，成就自我
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: zjw1993
-disqus_shortname: #zjw1993
+#duoshuo_shortname: zjw1993
+#disqus_shortname: #zjw1993
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
