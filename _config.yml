@@ -10,7 +10,7 @@ port: 4001
 title: 东吴科技
 brief-intro: 一只专业的互联网团队
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://zjw1993.github.io" # the base hostname & protocol for your site
+url: "https://dongwublog.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
