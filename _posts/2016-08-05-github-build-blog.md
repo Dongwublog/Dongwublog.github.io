@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "github下搭建blog"
-date:   2016-08-04
-categories: github
-tags: github
+date:   2016-8-5 
+categories: test
+tags: test 
 ---
 
 * content
@@ -11,7 +11,7 @@ tags: github
 　　Github是一个代码托管平台和开发者社区，开发者可以在Github上创建自己的开源项目并与
 其他开发者协作编码。创业公司可以用它来托管软件项目，开源项目可以免费托管，私有项
 目需付费。
-　　
+
 
 ## 主要步骤
 * 申请github账号
