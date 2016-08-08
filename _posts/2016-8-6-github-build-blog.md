@@ -40,7 +40,3 @@ tip:
 1.编写blog使用markdown语法,文件以年-月-日-标题.md命名存放在 _post文件内.
 
 2.了解markdown基本语法，详情[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
-
-    测试语法
-  
-
