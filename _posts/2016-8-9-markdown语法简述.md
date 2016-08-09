@@ -19,8 +19,6 @@ tags: jekyll markdown
 　　
 　　2.中文介绍[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
 　　
-　　3.11种基本语法简明介绍[http://www.cnblogs.com/hnrainll/p/3514637.html](http://www.cnblogs.com/hnrainll/p/3514637.html)
-　　
 ### blog文件保存上传提交
 　　1.本地上传blog文件
 　　
