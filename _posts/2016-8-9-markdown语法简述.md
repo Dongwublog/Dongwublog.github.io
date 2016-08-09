@@ -16,7 +16,7 @@ tags: jekyll markdown
 ### markdown语法介绍
 　　Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 　　1.markdown语法规则官方介绍[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
-　　
+
 　　2.中文介绍[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
 　　
 ### blog文件保存上传提交
