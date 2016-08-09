@@ -24,6 +24,7 @@ tags: jekyll markdown
 2.在本地命令行中进入/dongwublog.github.io/_posts文件使用编辑器（如vi、retext等）编写blog
 
 　　2.github网页直接编写
+
 1.进入github官网，登录github账号，进入repositories（仓库）Dongwublog.github.io。
 
 2.进入_posts文件create new file直接编辑
