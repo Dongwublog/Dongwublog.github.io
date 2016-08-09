@@ -26,19 +26,19 @@ tags: jekyll markdown
 　　
 ### 编写blog格式
 
->---
->layout: post
->title:　"title"
->date:   year-month-day
->categories: categories
->tags: tags1 tags2
->---
+> ---
+> layout: post
+> title:　"title"
+> date:   year-month-day
+> categories: categories
+> tags: tags1 tags2
+> ---
 >
->content
->{:toc}
->　　blog简介
+> content
+> {:toc}
+> 　　blog简介
 >　　
->正文
+> 正文
 
 
 
