@@ -10,6 +10,9 @@ tags: jekyll markdown
 {:toc}
 　　现在的社会很多人都写自己的blog，blog是一个书写自己一些想法并保存、记录、分享的工具。所以说，现今社会拥有一个自己的blog网站是十分必要的
 
+
+
+
 ### markdown语法介绍
 　　Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 　　1.markdown语法规则官方介绍[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
