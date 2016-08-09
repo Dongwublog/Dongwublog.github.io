@@ -18,10 +18,14 @@ tags: jekyll markdown
 
 ### 编写地点
 　　1.本地编写
+
 1.进入github官网，登录github账号，进入repositories（仓库）Dongwublog.github.io，将项目内容clone到本地
+
 2.在本地命令行中进入/dongwublog.github.io/_posts文件使用编辑器（如vi、retext等）编写blog
+
 　　2.github网页直接编写
 1.进入github官网，登录github账号，进入repositories（仓库）Dongwublog.github.io。
+
 2.进入_posts文件create new file直接编辑
 
 ### 博客文件创建
@@ -33,6 +37,7 @@ tip：格式行列**title**与**　　blog简介**中空格均为全角空格。
 
 ### markdown语法介绍
 　　Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
+
 　　1.markdown语法规则官方介绍[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
 
 　　2.中文介绍[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
