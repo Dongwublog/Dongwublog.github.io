@@ -54,5 +54,5 @@ tip：格式行列**title**与**　　blog简介**中空格均为全角空格。
 
 　　2.github网页直接上传
 
-编辑blog完成后，填写commit new file
+编辑blog完成后，commit new file
 　　
