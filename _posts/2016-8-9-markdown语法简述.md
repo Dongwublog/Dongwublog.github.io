@@ -34,6 +34,12 @@ tags: jekyll markdown
 
 ### 编写blog格式
 
+1.本地编辑模式（以Ubuntu为例）
+![markdown](/images/posts/markdown/1.png)
+
+2.github网页编辑模式
+![markdown](/images/posts/markdown/2.png)
+
 tip：**　　blog简介**中空格均为全角空格。
 
 ### markdown语法介绍
