@@ -9,11 +9,10 @@ tags: github
 * content
 {:toc}
 
+
+
+
 ## 主要步骤
-
-
-
-
 * 申请github账号
 * 建立github项目仓库
 * fork合适模板
