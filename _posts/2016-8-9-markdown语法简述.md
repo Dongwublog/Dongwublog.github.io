@@ -29,7 +29,7 @@ tags: jekyll markdown
 
 ### 编写blog格式
 
-tip：格式行列**title**与**　　blog简介中**空格均为全角空格。
+tip：格式行列**title**与**　　blog简介**中空格均为全角空格。
 
 ### markdown语法介绍
 　　Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
