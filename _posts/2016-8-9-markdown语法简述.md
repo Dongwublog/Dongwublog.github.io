@@ -15,7 +15,7 @@ tags: jekyll markdown
 
 ### 背景
 　　利用github搭建blog，选好合适jekyll模板，准备书写blog
-　　
+
 ### 编写地点
 　　1.本地编写
 1.进入github官网，登录github账号，进入repositories（仓库）Dongwublog.github.io，将项目内容clone到本地
@@ -23,10 +23,10 @@ tags: jekyll markdown
 　　2.github网页直接编写
 1.进入github官网，登录github账号，进入repositories（仓库）Dongwublog.github.io。
 2.进入_posts文件create new file直接编辑
-　　
+
 ### 博客文件创建
 　　博客以“年-月-日-标题.md”形式创建在_posts文件内。
-　　
+
 ### 编写blog格式
 
 tip：格式行列**title**与**　　blog简介中**空格均为全角空格。
@@ -36,7 +36,7 @@ tip：格式行列**title**与**　　blog简介中**空格均为全角空格。
 　　1.markdown语法规则官方介绍[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
 
 　　2.中文介绍[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
-　　
+
 ### blog文件保存上传提交
 　　1.本地上传blog文件
 　　
