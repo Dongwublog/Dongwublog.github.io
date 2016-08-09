@@ -40,7 +40,7 @@ tip：格式行列**title**与**　　blog简介**中空格均为全角空格。
 
 　　1.markdown语法规则官方介绍[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
 
-　　2.中文介绍[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
+　　2.markdown语法规则中文介绍[http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
 
 ### blog文件保存上传提交
 　　1.本地上传blog文件
