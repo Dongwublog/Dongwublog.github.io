@@ -26,32 +26,6 @@ tags: jekyll markdown
 　　
 ### 编写blog格式
 
-> ---
-
-> layout: post
-
-> title:　"title"
-
-> date:   year-month-day
-
-> categories: categories
-
-> tags: tags1 tags2
-
-> ---
->
-> content
-
-> {:toc}
-
-> 　　blog简介
->　　
-
-> 正文
-
-
-
-
 tip：格式行列**title**与**　　blog简介中**空格均为全角空格。
 
 ### markdown语法介绍
